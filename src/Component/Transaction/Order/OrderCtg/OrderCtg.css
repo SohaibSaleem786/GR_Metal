@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+    /* Change card width to 50% for small screens (2 cards per row) */
+    .cards {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .cards > .MuiCard-root {
+      width: calc(100% - 16px); /* Adjust margins as needed */
+      margin: 8px;
+    }
+  }

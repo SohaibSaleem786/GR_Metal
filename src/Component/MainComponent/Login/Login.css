@@ -1,0 +1,89 @@
+
+
+/* Login.css */
+/* Add the following CSS to make the layout responsive for small/mobile screens */
+
+/* For screens with a width of 768 pixels or less (small/mobile screens) */
+/* CSS for screens larger than 450px */
+@media (max-width: 450px) {
+  .row {
+    flex-direction: row; /* Restore the default flex-direction for larger screens */
+  }
+
+  .col-6 {
+    width: 50%; /* Restore the default width for larger screens */
+  }
+
+  .login-image {
+    height: 100%; /* Restore the default height of the image */
+  }
+
+  .col {
+    margin-right: 0; /* Remove the margin for larger screens */
+    height: 100vh; /* Set the height of the login section to the full viewport height */
+    text-align: left; /* Reset the text alignment for larger screens */
+  }
+
+  img[src$='malik.png'] {
+    margin: 0; /* Remove the margin for larger screens */
+    height: 300px; /* Restore the default size of the user image for larger screens */
+    width: 300px;
+  }
+}
+
+/* CSS for screens smaller than or equal to 450px */
+@media (max-width: 450px) {
+
+  .row {
+    flex-direction: column-reverse; /* Reversed flex-direction for smaller screens */
+  }
+  .col-6 {
+    width: 100%; /* Full width for smaller screens */
+  }
+
+  .login-image {
+    height: 300px; /* Reduce the height of the image for better visibility on small screens */
+    object-fit: cover; /* Maintain image aspect ratio */
+  }
+
+  .col {
+    margin-right: 20%;
+    height: auto; /* Adjust the height of the login section */
+    text-align: center; /* Center the login elements */
+  }
+
+  img[src$='malik.png'] {
+    margin: 10px auto; /* Center the user image */
+    height: 150px; /* Reduce the size of the user image for small screens */
+    width: 150px;
+  }
+}
+
+/* Additional CSS to hide the scrollbar when body overflow is hidden */
+body {
+  overflow: hidden;
+}
+
+/* Re-enable the scrollbar for larger screens */
+@media (max-width: 450px) {
+  body {
+    overflow: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

@@ -1,0 +1,67 @@
+.container {
+    margin-top: 50px;
+  }
+  
+  .card {
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+    background-color: #f2f2f2;
+    padding: 15px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  .btn-primary {
+    background-color: orange;
+    color: black;
+    width: 100%;
+  }
+
+
+
+  /* AddUser.css (create a separate CSS file) */
+@media screen and (max-width: 768px) {
+  /* Styles for small screens (e.g., mobile phones) */
+  .row {
+    /* Example: Adjust the height or width for small screens */
+    height: auto;
+    width: 100%; /* Full width for small screens */
+    margin-left: 0; /* Remove the left margin for full width */
+    margin-right: 0; /* Remove the right margin for full width */
+  }
+
+  form.form {
+    /* Example: Adjust the width for small screens */
+    width: 95%;
+  }
+
+  /* Add any other responsive styles here */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  /* Styles for medium-sized screens (e.g., tablets) */
+  .row {
+    /* Example: Adjust the height or width for medium-sized screens */
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  /* Add any other responsive styles here */
+}
+
+/* Add more media queries for larger screens if needed */

@@ -1,0 +1,69 @@
+styles.css
+.menu-container {
+    font-family: Arial, sans-serif;
+    color: black;
+  }
+  
+  .menu-header {
+    background: orange;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid red;
+  }
+  
+  .tab {
+    background: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  
+  .active-tab {
+    background: orange;
+    color: black;
+  }
+  
+  .checkbox-label {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .table-container {
+    width: 70%;
+    margin-left: 16%;
+    margin-right: 3%;
+    overflow: hidden;
+  }
+  
+  .table {
+    width: 100%;
+  }
+  
+  .table th {
+    background: orange;
+    color: black;
+    text-align: center;
+  }
+  
+  .table td {
+    text-align: center;
+  }
+  
+  .alert-container {
+    position: relative;
+  }
+  
+  .alert-warning {
+    width: 400px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  

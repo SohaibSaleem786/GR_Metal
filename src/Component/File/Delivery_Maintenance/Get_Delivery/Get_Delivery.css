@@ -1,0 +1,32 @@
+/* Default styles for buttons */
+
+
+/* Default style for the input */
+.form-control {
+  font-size: 12px;
+}
+
+/* Default style for the table */
+.MDBTable {
+  font-size: 12px;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  /* Adjust margin for the button container */
+  .delivery-container {
+    margin-left: 30%;
+    margin-right: 30%;
+    max-width: 40%;
+  }
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  /* Adjust margin for the button container */
+  .delivery-container {
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 90%;
+  }
+}

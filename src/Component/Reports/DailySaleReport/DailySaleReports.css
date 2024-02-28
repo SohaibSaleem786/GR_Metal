@@ -1,0 +1,69 @@
+/* DatePicker.css */
+
+/* Style the input field */
+.custom-datepicker {
+    width: 100px; /* Adjust the width as per your requirement */
+    height: 30px; /* Adjust the height as per your requirement */
+    font-size: 14px; /* Adjust the font size as per your requirement */
+    padding: 5px;
+  }
+  
+  /* Style the calendar icon (optional) */
+  .react-datepicker-wrapper {
+    display: inline-block;
+    margin-left: 10px; /* Add margin to separate from the input field */
+  }
+  
+  /* Style the calendar pop-up */
+  .react-datepicker-popper {
+    z-index: 1000; /* Ensure it appears above other elements */
+  }
+  
+  /* Style the calendar itself */
+  .react-datepicker {
+    font-size: 14px; /* Adjust the font size as per your requirement */
+  }
+  
+  /* Style the calendar header */
+  .react-datepicker__header {
+    background-color: #007bff; /* Change header background color */
+    color: white; /* Change header text color */
+  }
+  
+  /* Style the day cells */
+  .react-datepicker__day {
+    width: 30px; /* Adjust the day cell width as per your requirement */
+    height: 30px; /* Adjust the day cell height as per your requirement */
+    line-height: 30px; /* Center the day text vertically */
+    font-size: 14px; /* Adjust the font size as per your requirement */
+  }
+  
+  /* Style the selected day */
+  .react-datepicker__day--selected {
+    background-color: #007bff; /* Change the background color of selected day */
+    color: white; /* Change the text color of selected day */
+  }
+  
+  /* Style the day names (Su, Mo, Tu, etc.) */
+  .react-datepicker__day-name {
+    width: 30px; /* Adjust the width of day names */
+    height: 30px; /* Adjust the height of day names */
+    line-height: 30px; /* Center the day name text vertically */
+    font-size: 14px; /* Adjust the font size of day names */
+  }
+  
+  /* Style the previous and next month arrows (optional) */
+  .react-datepicker__navigation--previous,
+  .react-datepicker__navigation--next {
+    border: none; /* Remove the border from arrows */
+    background-color: transparent; /* Make arrows transparent */
+    color: #007bff; /* Change arrow color */
+    font-size: 16px; /* Adjust the font size of arrows */
+  }
+  
+  /* Style the selected date range (when using range selection) */
+  .react-datepicker__day--in-range {
+    background-color: #007bff; /* Change the background color of in-range dates */
+    color: white; /* Change the text color of in-range dates */
+  }
+  

@@ -1,0 +1,230 @@
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  background-color: #222;
+  color: #fff;
+  padding: 0 20px;
+  top: 200px;
+}
+
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 60px;
+  left: -250px;
+  width: 19%;
+  height: 100%;
+  background-color: #333;
+  transition: left 0.3s ease-in-out;
+}
+
+.sidebar--open {
+  left: 0;
+}
+
+.sidebar__list {
+  
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+
+
+
+.sidebar__list-item1 {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+
+}.sidebar__list-item1 .dropdown {
+  position: absolute;
+  top: 10px;
+  right: -200px;
+  width: 200px;
+  background-color: #333;
+  display: none;
+}
+.sidebar__list-item1:hover .dropdown {
+  display: block;
+  color: #f7a576;
+}
+
+/* .dropdown li {
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid  #ffffff;
+} */
+.dropdown li:last-child {
+  border-bottom: none;
+}
+.dropdown a {
+  display: block;
+  padding: 10px 20px;
+  /* color: #fff; */
+  text-decoration: none;
+}
+.dropdown a:hover {
+  background-color: #ffffff;
+} 
+
+/* //////////......Sub dropdown menu ............///// */
+.dropdown1 li {
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #ffffff;
+}
+
+.dropdown1 li:last-child {
+  border-bottom: none;
+}
+.dropdown1 a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+.dropdown1 a:hover {
+  background-color: #fffefe;
+} 
+.sidebar__list-item1 a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #444;
+  transition: background-color 0.3s ease-in-out;
+
+}
+.sidebar__list-item4 a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #444;
+  transition: background-color 0.3s ease-in-out;
+
+}
+.sidebar__list-itemdropdown a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #444;
+  transition: background-color 0.3s ease-in-out;
+}
+.dropdown_two  a{
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #444;
+  transition: background-color 0.3s ease-in-out;
+
+}
+
+.sidebar__list-item1 a span{
+  position: absolute;
+  left: 200px;
+  /* font-size: 1.5em; */
+ }
+
+ .sidebar__list-item1 a:hover {
+  background-color: #ffffff;
+  
+}
+
+/* Toggle Button */
+.toggle-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__bar {
+  width: 100%;
+  height: 3px;
+  /* background-color: #fff; */
+  transition: transform 0.3s ease-in-out;
+}
+
+.toggle-button__bar:first-child {
+  transform-origin: top;
+}
+
+.toggle-button__bar:last-child {
+  transform-origin: bottom;
+}
+
+.sidebar--open .toggle-button__bar:first-child {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.sidebar--open .toggle-button__bar:last-child {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.sidebar--open .toggle-button__bar:nth-child(2) {
+  opacity: 0;
+}
+
+
+
+
+
+.sidebar__list-item5 > a > span {
+  visibility: hidden;
+}
+.sidebar__list-item5 ul ul ul{
+  position: absolute;
+  left:  200px;
+ }
+
+
+
+
+ /* Add this CSS to your SideBar.css or a separate CSS file */
+
+/* Media query for screens with a maximum width of 768px (adjust as needed) */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none; /* Hide the sidebar by default on small screens */
+  }
+
+  .toggle-button {
+    display: block; /* Show the toggle button on small screens */
+  }
+
+  .sidebar--open {
+    display: block; /* Display the open sidebar on small screens */
+  }
+
+  .sidebar__list {
+    flex-direction: column; /* Display menu items vertically on small screens */
+  }
+
+  .sidebar__list-item1 {
+    margin-bottom: 10px; /* Add spacing between menu items */
+  }
+
+  .dropdown {
+    position: relative; /* Make dropdown menus relative to their parent on small screens */
+    left: 0; /* Reset the left position */
+    width: auto; /* Allow dropdown menus to expand as needed */
+  }
+}
